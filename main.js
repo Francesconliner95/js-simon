@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     var num_gen = [];
     var cont = 0;
-    var tempo = 30;
+    var tempo = 5;
     var num_ins = [];
     var game_over=false;
 
@@ -30,7 +30,7 @@ $(document).ready(function() {
 
             setTimeout(function(){ /*Se il tempo è scaduto faccio passare qualche secondo prima di avviare la funzione successiva cosi il prompt non mi blocca la scomparsa dei numeri generati casualmente*/
                 tempo_scaduto(); /*avvio la funzione*/
-            }, 2000);
+            }, 1000);
 
         }
 
@@ -59,9 +59,9 @@ $(document).ready(function() {
         }
 
         $( ".num-gen" ).show(); /*Mostro nuovamete i numeri generati*/
-        $( ".avvisi" ).text( "Tempo Scaduto" ).hide(); /*Nascondo "tempo scaduto"*/
+        $( ".avvisi" ).text( "" ); /*Nascondo tempo scaduto*/
 
-        if(game_over==true){ 
+        if(game_over==true){
             console.log("hai perso");
             $( ".avvisi" ).append( "<H1>Hai Perso</H1>" );
         }
