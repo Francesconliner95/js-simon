@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+
+.num-gen{
+    text-align: center;
+}
+
+.num-gen>span{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: orange;
+    margin: 20px;
+    padding-top:10px;
+}
